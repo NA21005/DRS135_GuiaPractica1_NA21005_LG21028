@@ -18,7 +18,7 @@ namespace Ejercicio1_Abstraccion
     /// Los detalles de almacenamiento del saldo se mantienen privados y solo se modifican
     /// o consultan mediante métodos públicos que aplican reglas de negocio.
     /// </summary>
-    internal class CuentaBancaria
+    public class CuentaBancaria
     {
         // Atributo Privado: El saldo está protegido de modificaciones externas no autorizadas
         private decimal _saldo;
