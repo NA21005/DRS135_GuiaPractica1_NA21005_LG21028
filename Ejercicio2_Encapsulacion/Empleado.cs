@@ -24,12 +24,21 @@ namespace Ejercicio2_Encapsulacion
         private string _nombre;
         private int _edad;
 
+        /// <summary>
+        /// Inicializa un nuevo empleado con nombre y edad válidos.
+        /// </summary>
+        /// <param name="nombre">Nombre completo del empleado.</param>
+        /// <param name="edad">Edad del empleado (debe ser mayor que 0 y menor que 100).</param>
         public Empleado(string nombre, int edad)
         {
             Nombre = nombre;
             Edad = edad;
         }
 
+        /// <summary>
+        /// Propiedad de acceso controlado al nombre del empleado.
+        /// Valida que no se asigne un valor vacío o nulo.
+        /// </summary>
         public string Nombre
         {
             get { return _nombre; }
@@ -50,6 +59,10 @@ namespace Ejercicio2_Encapsulacion
             }
         }
 
+        /// <summary>
+        /// Propiedad de acceso controlado a la edad del empleado.
+        /// Solo permite valores mayores que 0 y menores que 100.
+        /// </summary>
         public int Edad
         {
             get { return _edad; }
@@ -70,6 +83,9 @@ namespace Ejercicio2_Encapsulacion
             }
         }
 
+        /// <summary>
+        /// Muestra en consola la información actual del empleado (nombre y edad).
+        /// </summary>
         public void MostrarInformacion()
         {
             Console.WriteLine($"Empleado: {_nombre} | Edad: {_edad}");
