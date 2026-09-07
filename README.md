@@ -29,7 +29,7 @@ Guia-Practica-1-DRS/
 │
 ├── .gitignore
 ├── README.md
-├── GuiaPractica1_DRS.sln
+├── DRS135_GuiaPractica1_NA21005_LG21028.slnx
 │
 ├── Ejercicio1_Abstraccion/
 │   ├── CuentaBancaria.cs
